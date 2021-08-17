@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<users
+        xmlns="https://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.w3schools.com/xml users.xsd">
+    <user>
+        <employee id="1">
+            <firstName>Kwang</firstName>
+            <lastName>Ngo</lastName>
+            <email>minhquang@gmail.com</email>
+            <phone>999999</phone>
+            <age>18</age>
+            <position>dev</position>
+            <department>ai ti</department>
+        </employee>
+    </user>
+    <user>
+        <employee id="2">
+            <firstName>Kien</firstName>
+            <lastName>Trend She</lastName>
+            <email>kien321@gmail.com</email>
+            <phone>12333123</phone>
+            <age>16</age>
+            <position>dev</position>
+            <department>ai ti</department>
+        </employee>
+    </user>
+    <user>
+        <employee id="3">
+            <firstName>Back</firstName>
+            <lastName>Tung</lastName>
+            <email>backtruahe@gmail.com</email>
+            <phone>321544675</phone>
+            <age>18</age>
+            <position>dev</position>
+            <department>ai ti</department>
+        </employee>
+    </user>
+    <user>
+        <teacher>
+            <firstName>Hung</firstName>
+            <lastName>Xuan</lastName>
+            <email>springhero@gmail.com</email>
+            <phone>2136464</phone>
+            <age>18</age>
+            <experience>99</experience>
+            <class>t2012e</class>
+        </teacher>
+    </user>
+    <user>
+        <teacher>
+            <firstName>Luyen</firstName>
+            <lastName>Hong</lastName>
+            <email>stillspringhero@hotmail.com</email>
+            <phone>123123132</phone>
+            <age>18</age>
+            <experience>98</experience>
+            <class>e2012t</class>
+        </teacher>
+    </user>
+</users>
