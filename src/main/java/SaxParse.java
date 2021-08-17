@@ -2,7 +2,6 @@ import util.ConnectionHelper;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import java.io.File;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -18,8 +17,8 @@ public class SaxParse {
             ArrayList<Article> arrayList = handler.getArticleArrayList();
             for (Article currentItem :
                     arrayList) {
-                register(currentItem);
-//                System.out.println(currentItem.toString());
+//                register(currentItem);
+                System.out.println(currentItem.toString());
             }
         } catch (Exception e) {
             e.printStackTrace();

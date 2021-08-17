@@ -5,12 +5,11 @@ import org.xml.sax.helpers.DefaultHandler;
 import java.util.ArrayList;
 
 public class Handler extends DefaultHandler {
-    private boolean isTitle = false;
-    private boolean isDescription = false;
-    private boolean isPubDate = false;
-    private boolean isGenerator = false;
-    private boolean isGuid = false;
-    private boolean isLink = false;
+    private boolean isTitle;
+    private boolean isDescription;
+    private boolean isPubDate;
+    private boolean isGuid;
+    private boolean isLink;
     private Article currentArticle;
     private ArrayList<Article> articleArrayList = new ArrayList<>();
 
@@ -60,7 +59,7 @@ public class Handler extends DefaultHandler {
             case "link":
                 isLink = false;
                 break;
-            case "guild":
+            case "guid":
                 isGuid = false;
         }
     }

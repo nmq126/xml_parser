@@ -40,7 +40,6 @@ public class Article {
         this.description = description;
     }
 
-
     public String getPubDate() {
         return pubDate;
     }
@@ -48,7 +47,6 @@ public class Article {
     public void setPubDate(String pubDate) {
         this.pubDate = pubDate;
     }
-
 
     public String getLink() {
         return link;
