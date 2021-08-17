@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 
 public class DomParse {
+    private static final String XML_FILE_NAME = "https://vnexpress.net/rss/tam-su.rss";
     public static void main(String[] args) {
         readXml();
     }
@@ -52,7 +53,7 @@ public class DomParse {
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document document = dBuilder.parse("https://vnexpress.net/rss/tam-su.rss");
+            Document document = dBuilder.parse(XML_FILE_NAME);
             Element element = document.getDocumentElement();
             NodeList nodeList = element.getElementsByTagName("item");
             for (int i = 0; i < nodeList.getLength(); i++) {
@@ -65,19 +66,19 @@ public class DomParse {
                         continue;
                     }
                     switch (childNode.getNodeName()) {
-                        case "title":
+                        case Article.TITLE_TAG:
                             article.setTitle(childNode.getTextContent());
                             break;
-                        case "description":
+                        case Article.DESCRIPTION_TAG:
                             article.setDescription(childNode.getTextContent());
                             break;
-                        case "pubDate":
+                        case Article.PUBDATE_TAG:
                             article.setPubDate(childNode.getTextContent());
                             break;
-                        case "link":
+                        case Article.LINK_TAG:
                             article.setLink(childNode.getTextContent());
                             break;
-                        case "guid":
+                        case Article.GUID_TAG:
                             article.setGuid(childNode.getTextContent());
                             break;
                     }

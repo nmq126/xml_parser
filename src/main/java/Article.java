@@ -1,4 +1,10 @@
 public class Article {
+
+    public static final String TITLE_TAG = "title";
+    public static final String DESCRIPTION_TAG = "description";
+    public static final String PUBDATE_TAG = "pubDate";
+    public static final String LINK_TAG = "link";
+    public static final String GUID_TAG = "guid";
     private String title;
     private String description;
     private String pubDate;

@@ -8,12 +8,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class SaxParse {
+    private static final String XML_FILE_NAME = "https://vnexpress.net/rss/tam-su.rss";
     public static void main(String[] args) {
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             Handler handler = new Handler();
-            saxParser.parse("https://vnexpress.net/rss/tam-su.rss", handler);
+            saxParser.parse(XML_FILE_NAME, handler);
             ArrayList<Article> arrayList = handler.getArticleArrayList();
             for (Article currentItem :
                     arrayList) {

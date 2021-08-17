@@ -23,19 +23,19 @@ public class Handler extends DefaultHandler {
             case "item":
                 currentArticle = new Article();
                 break;
-            case "title":
+            case Article.TITLE_TAG:
                 isTitle = true;
                 break;
-            case "description":
+            case Article.DESCRIPTION_TAG:
                 isDescription = true;
                 break;
-            case "pubDate":
+            case Article.PUBDATE_TAG:
                 isPubDate = true;
                 break;
-            case "link":
+            case Article.LINK_TAG:
                 isLink = true;
                 break;
-            case "guid":
+            case Article.GUID_TAG:
                 isGuid = true;
                 break;
         }
@@ -47,19 +47,19 @@ public class Handler extends DefaultHandler {
             case "item":
                 articleArrayList.add(currentArticle);
                 break;
-            case "title":
+            case Article.TITLE_TAG:
                 isTitle = false;
                 break;
-            case "description":
+            case Article.DESCRIPTION_TAG:
                 isDescription = false;
                 break;
-            case "pubDate":
+            case Article.PUBDATE_TAG:
                 isPubDate = false;
                 break;
-            case "link":
+            case Article.LINK_TAG:
                 isLink = false;
                 break;
-            case "guid":
+            case Article.GUID_TAG:
                 isGuid = false;
         }
     }
