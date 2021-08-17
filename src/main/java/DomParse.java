@@ -85,8 +85,8 @@ public class DomParse {
                 articleArrayList.add(article);
             }
             for (int i = 0; i < articleArrayList.size(); i++) {
-//                register(articleArrayList.get(i));
-                System.out.println(articleArrayList.get(i).toString());
+                register(articleArrayList.get(i));
+//                System.out.println(articleArrayList.get(i).toString());
             }
         } catch (Exception e) {
             e.printStackTrace();

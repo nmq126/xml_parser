@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectionHelper {
 
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/%s?useUnicode=true&characterEncoding=utf-8";
-    private static final String DATABASE_NAME = "human_resource";
+    private static final String DATABASE_NAME = "vn_express";
     private static final String DATABASE_USER = "root";
     private static final String DATABASE_PWD = "";
     private static Connection cnn;

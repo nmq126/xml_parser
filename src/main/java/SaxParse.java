@@ -17,8 +17,8 @@ public class SaxParse {
             ArrayList<Article> arrayList = handler.getArticleArrayList();
             for (Article currentItem :
                     arrayList) {
-//                register(currentItem);
-                System.out.println(currentItem.toString());
+                register(currentItem);
+//                System.out.println(currentItem.toString());
             }
         } catch (Exception e) {
             e.printStackTrace();
